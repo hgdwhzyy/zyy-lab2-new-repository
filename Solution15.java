@@ -36,7 +36,7 @@ class Solution {
                 x = Integer.parseInt(v1[i]);
             }
             if (i < v2.length) {
-                y = Integer.parseInt(v2[i]);
+                y = Integer.parseInt(v2[i]);//没有else判断i>.v2.length的情况可能会造成版本号长度不一的情况下的大小判断失误
             }
             if (x > y) {
                 return 1;
